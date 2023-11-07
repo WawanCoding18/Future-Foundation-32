@@ -1,0 +1,32 @@
+<div class="section1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="sampah-removebg.png" class="img-fluid" alt="sampah-removebg">
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+
+</div>
+
+<!--button-->
+<div class="section2 d-grid gap-2 col-md-10 mx-auto my-custom-row align-items-center" >
+  <h1 class="text-black title text-center fs-3">Edukasi Gaya Hidup Berkelanjutan Berbasis Teknologi Informasi di Tengah Era Industri 5.0</h1>
+  <button class="btn btn-outline-success btn-lg" type="button">Apa itu Sampah?</button>
+  <button class="btn btn-outline-success btn-lg" type="button">Macam2 Sampah</button>
+  <button class="btn btn-outline-success btn-lg" type="button">Cara Memilah Sampah</button>
+  <button class="btn btn-outline-success btn-lg" type="button">Video Edukasi Pengelolaan Sampah</button>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="home col-md-4 offset-md-3">
+  <h1 class="mb-3 fw-bold fs-1">Future<span>Fondation.</span></h1>
