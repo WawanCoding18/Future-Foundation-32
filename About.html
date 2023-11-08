@@ -45,6 +45,20 @@
     height: 30vh;
     margin-top: 20%;
   }
+
+  @media (max-width: 767px) {
+  .image {
+    position: static; /* Mengembalikan gambar ke posisi normal */
+    float: none; /* Menghilangkan float */
+    margin: 0 auto; /* Pusatkan gambar */
+  }
+
+  .about h1 {
+    margin-top: 10%; /* Sesuaikan tinggi margin atas sesuai kebutuhan */
+    margin-left: 2rem; /* Sesuaikan margin kiri sesuai kebutuhan */
+    padding-right: 2rem; /* Sesuaikan padding kanan sesuai kebutuhan */
+  }
+}
   
     </style>
     
@@ -58,7 +72,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  mb-2 ms-5 mb-lg-0 justify-content-center py-1  ">
-            <li class="nav-item">
+            <li class="nav-item ms-5">
               <a class="nav-link active fw-normal" aria-current="page" href="https://wawancoding18.github.io/Future-Foundation-32//index.html">Home</a>
             </li>
             <li class="nav-item ms-5">
