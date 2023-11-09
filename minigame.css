@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+#drop-zone{
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    margin-top: 200px;
+    background-color: antiquewhite;
+    
+}
+
+#card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
