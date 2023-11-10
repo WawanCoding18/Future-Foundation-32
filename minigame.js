@@ -1,24 +1,34 @@
-const card = document.getElementById('card')
-const dropZone = document.getElementById("drop-zone")
-const dropZone1 = document.getElementById("drop-zone1")
+const card = document.getElementById('card');
+const dropZone = document.getElementById('drop-zone');
+const dropZone1 = document.getElementById('drop-zone1');
 
-card.addEventListener('dragstart', function(event){
-    console.log(event)
-})
+card.addEventListener('dragstart', function (event) {
+  console.log(event);
+});
 
-dropZone.addEventListener('dragover', function(event){
-    event.preventDefault()
-})
+dropZone.addEventListener('dragover', function (event) {
+  event.preventDefault();
+});
 
-dropZone.addEventListener('drop', function(event){
-    dropZone.prepend(card)
-})
+dropZone1.addEventListener('dragover', function (event) {
+  event.preventDefault();
+});
 
-if (card == dropZone){
-    prompt("Yey benar")
-}
-else if (card == dropZone1){
-    prompt("Yey salah")
-}
+dropZone.addEventListener('drop', function (event) {
+  if (card.classList.contains('organik')) {
+    alert('Maaf, salah masuk tempat sampah!');
+  } else {
+    dropZone.prepend(card);
+  }
+});
+
+dropZone1.addEventListener('drop', function (event) {
+  if (card.classList.contains('anorganik')) {
+    alert('Maaf, salah masuk tempat sampah!');
+  } else {
+    dropZone1.prepend(card);
+  }
+});
+
 
 
