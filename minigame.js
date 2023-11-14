@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const tempatOrganik = document.getElementById('tempat-organik');
   const tempatAnorganik = document.getElementById('tempat-anorganik');
   const tempatB3 = document.getElementById('tempat-B3');
+  const musicTrue = document.getElementById('sound');
+  const musicFalse = document.getElementById('sound1');
+  
 
   // Add event listeners for drag and drop
   tempatOrganik.addEventListener('dragover', allowDrop);
@@ -24,10 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (isOrganik(draggedElement)) {
           tempatOrganik.appendChild(draggedElement);
           // Handle correct drop for organik waste
-          alert('Sampah Organik berhasil dimasukkan!');
+          musicTrue.currentTime= 0
+          musicTrue.play()
       } else {
           // Handle incorrect drop for  waste
-          alert('Salah masuk tempat sampah!');
+          musicFalse.currentTime= 0
+          musicFalse.play()
       }
   }
 
@@ -38,10 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (isAnorganik(draggedElement)) {
           tempatAnorganik.appendChild(draggedElement);
           // Handle correct drop for anorganik waste
-          alert('Sampah Anorganik berhasil dimasukkan!');
+          musicTrue.currentTime= 0
+          musicTrue.play()
       } else {
           // Handle incorrect drop for waste
-          alert('Salah masuk tempat sampah!');
+          musicFalse.currentTime= 0
+          musicFalse.play()
       }
   }
 
@@ -53,10 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (isB3(draggedElement)) {
           tempatB3.appendChild(draggedElement);
           // Handle correct drop for B3 waste
-          alert('Sampah B3 berhasil dimasukkan!');
+          musicTrue.currentTime= 0
+          musicTrue.play()
       } else {
           // Handle incorrect drop  waste
-          alert('Salah masuk tempat sampah!');
+          musicFalse.currentTime= 0
+          musicFalse.play()
       }
   }
 
