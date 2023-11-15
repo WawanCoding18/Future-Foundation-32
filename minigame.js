@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function isAnorganik(element) {
       // Check if the element is anorganik waste (you can modify this logic based on your needs)
       // For example, you can use a specific class name or data attribute
-      return element.src.includes('sampahgame4') || element.src.includes('sampahgame5') || element.src.includes('sampahgame6') || element.src.includes('sampahgambar7')
+      return element.src.includes('sampahgame4') || element.src.includes('sampahgame5') || element.src.includes('sampahgame6') || element.src.includes('sampahgambar7') || element.src.includes('sampahplastik')
   }
   function isB3(element) {
       // Check if the element is b3 waste (you can modify this logic based on your needs)
