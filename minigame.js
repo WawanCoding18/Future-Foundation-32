@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function isOrganik(element) {
       // Check if the element is organik waste (you can modify this logic based on your needs)
       // For example, you can use a specific class name or data attribute
-      return element.src.includes('sampahgame1') || element.src.includes('sampahgame2') || element.src.includes('sampahgame3');
+      return element.src.includes('sampahgame1') || element.src.includes('sampahgame2') || element.src.includes('sampahgambar3');
   }
   function isAnorganik(element) {
       // Check if the element is anorganik waste (you can modify this logic based on your needs)
@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 })
+
 
 
 
